@@ -1,4 +1,4 @@
-package fr.aelion;
+package fr.aelion.models;
 
 public class Student {
     public String lastName;
@@ -43,5 +43,9 @@ public class Student {
     }
     public Boolean isLoggedIn() {
         return this.isLoggedIn;
+    }
+
+    public void isLoggedIn(boolean isLoggedIn) {
+         this.isLoggedIn = isLoggedIn;
     }
 }

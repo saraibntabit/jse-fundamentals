@@ -1,6 +1,6 @@
 package fr.aelion.run;
 
-import fr.aelion.Student;
+import fr.aelion.models.Student;
 
 public class StudentRun {
     public void run() {

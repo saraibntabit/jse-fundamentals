@@ -1,6 +1,6 @@
 package fr.aelion.repositories;
 
-import fr.aelion.Student;
+import fr.aelion.models.Student;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,13 +11,13 @@ public class StudentRepository {
         this.populate();
     }
 
-    public boolean findByLoginAndPassword(String login, String password) {
+    public Student findByLoginAndPassword(String login, String password) {
         for (Student student : this.students) {
             if (student.getUsername() == login && student.getPassword() == password) {
-                return true;
+                return student;
             }
         }
-        return false;
+        return null;
     }
 
     public int size() {
